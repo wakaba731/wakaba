@@ -1,0 +1,35 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .bg { fill: #f7f3ef; }
+    .cup { fill: #ffffff; stroke: #6f4e37; stroke-width: 3; }
+    .coffee { fill: #6f4e37; }
+    .leaf { fill: #8fcf8f; }
+    .steam { stroke: #8fcf8f; stroke-width: 3; fill: none; stroke-linecap: round; }
+  </style>
+
+  <!-- Background -->
+  <circle cx="100" cy="100" r="95" class="bg"></circle>
+
+  <!-- Cup (rounded, cute shape) -->
+  <path d="M65 95 
+           Q100 80 135 95 
+           Q130 135 100 140 
+           Q70 135 65 95 Z" class="cup"></path>
+
+  <!-- Coffee surface -->
+  <ellipse cx="100" cy="95" rx="30" ry="8" class="coffee"></ellipse>
+
+  <!-- Handle (fixed: smooth oval loop) -->
+  <path d="M135 100 
+           C155 100,155 135,135 135 
+           C145 130,145 105,135 100 Z" class="cup" fill="none"></path>
+
+  <!-- Steam (soft S curve) -->
+  <path d="M100 80 
+           C90 65,110 60,100 45" class="steam"></path>
+
+  <!-- Leaf at tip (naturally connected) -->
+  <path d="M100 45 
+           C92 40,92 30,100 25 
+           C108 30,108 40,100 45 Z" class="leaf"></path>
+</svg>
